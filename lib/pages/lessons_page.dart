@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
-import 'package:minna_no_nihongo_quiz/ui_elements/gridbox_element.dart';
-import 'package:minna_no_nihongo_quiz/pages/lesson_word_page.dart';
+import 'package:minna_no_nihongo_kh/ui_elements/gridbox_element.dart';
+import 'package:minna_no_nihongo_kh/pages/lesson_word_page.dart';
 
 class LessonsPage extends StatefulWidget {
   // final String weapon;

@@ -1,13 +1,7 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:minna_no_nihongo_quiz/pages/about_page.dart';
-
-import 'package:minna_no_nihongo_quiz/pages/home_page.dart';
-import 'package:minna_no_nihongo_quiz/pages/quiz_page.dart';
-import 'package:minna_no_nihongo_quiz/pages/lessons_page.dart';
-import 'package:minna_no_nihongo_quiz/pages/kana_page.dart';
-import 'package:minna_no_nihongo_quiz/pages/result_page.dart';
+import 'package:minna_no_nihongo_kh/pages/about_page.dart';
+import 'package:minna_no_nihongo_kh/pages/home_page.dart';
+import 'package:minna_no_nihongo_kh/pages/lessons_page.dart';
 import 'package:sqflite/sqflite.dart';
 
 void main(){
@@ -184,7 +178,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'រៀនជប៉ុន',
       theme: ThemeData(
         // primaryColor: Colors.pinkAccent[100],
         // primarySwatch: Colors.pinkAccent[100],
@@ -195,10 +189,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomePage(),
         // '/kana': (context) => KanaPage(),
-        '/kanji': (context) => QuizPage(),
         '/lessons': (context) => LessonsPage(),
-        '/quiz': (context) => QuizPage(weapon: ""),
-        '/result': (context) => ResultPage(),
         '/about': (context) => AboutPage(),
       },
   

@@ -1,4 +1,4 @@
-package com.example.minna_no_nihongo_quiz;
+package com.javreak.minna_no_nihongo_kh;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

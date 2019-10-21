@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=C:\flutter"
-export "FLUTTER_APPLICATION_PATH=D:\Vireak\FlutterProjects\minna_no_nihongo_quiz"
+export "FLUTTER_APPLICATION_PATH=D:\Vireak\FlutterProjects\minna_no_nihongo_kh"
 export "FLUTTER_TARGET=lib\main.dart"
 export "FLUTTER_BUILD_DIR=build"
 export "SYMROOT=${SOURCE_ROOT}/../build\ios"
