@@ -65,7 +65,7 @@ class _KanaPageState extends State<KanaPage> with SingleTickerProviderStateMixin
       else
         _playKana = _playbackData[_index]['katakana'];
       _initKanaPage();
-      _timerPlay = Timer(new Duration(milliseconds: 500), () {
+      _timerPlay = Timer(new Duration(milliseconds: 200), () {
         if(_playRoman.isEmpty == false)
           _play(_playRoman, key.toString());
       });
@@ -276,7 +276,7 @@ class _KanaPageState extends State<KanaPage> with SingleTickerProviderStateMixin
           MaterialButton(
             minWidth: 60,
             onPressed: ()=>{_resetPlayback()},
-            child: Icon(Icons.replay, color: Colors.white,),
+            child: Icon(Icons.stop, color: Colors.white,),
           ),
           MaterialButton(
             minWidth: 60,

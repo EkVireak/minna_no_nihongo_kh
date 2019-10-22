@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AboutPage extends StatelessWidget {
+  void openGIT() async{
+    await launch("https://github.com/EkVireak");
+  }
   void openFB() async{
     // if(Platform.isAndroid){
       String fbUrl = "fb://profile/100009582370216";
@@ -38,6 +41,7 @@ class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.pink[100],
       appBar: AppBar(
         title: Text("អំពីកម្មវិធី"),
         centerTitle: true,
@@ -46,7 +50,13 @@ class AboutPage extends StatelessWidget {
       body: Container(
         alignment: Alignment.centerLeft,
         child: ListView(
+          padding: EdgeInsets.symmetric(vertical: 5),
           children: <Widget>[
+            Container(
+              alignment: Alignment.centerLeft,
+              padding: EdgeInsets.all(20),
+              child: Image.asset('assets/img/mnn-icon.png'),
+            ),
             Card(
               child: Container(
                 alignment: Alignment.centerLeft,
@@ -66,13 +76,8 @@ class AboutPage extends StatelessWidget {
                         children: <Widget>[
                           InkWell(
                             splashColor: Colors.pinkAccent[100],
-                            onTap: ()=>{openFB()},
-                            child: Image.asset('assets/img/fb.png'),
-                          ),
-                          Padding(padding: EdgeInsets.all(10)),
-                          InkWell(
-                            onTap: ()=>{openIG()},
-                            child: Image.asset('assets/img/ig.png'),
+                            onTap: ()=>{openGIT()},
+                            child: Image.asset('assets/img/github.png'),
                           ),
                           Padding(padding: EdgeInsets.all(10)),
                           InkWell(

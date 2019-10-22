@@ -1,4 +1,4 @@
-String dateFormat(DateTime dt, {String format = "Y-m-d h:m:s"}){
+String dateFormat(DateTime dt, {String format = "yyyy-m-d h:m:s"}){
   if( dt != null ){
     String month, day, hour, minute, second;
     if(dt.month<10)
@@ -20,8 +20,21 @@ String dateFormat(DateTime dt, {String format = "Y-m-d h:m:s"}){
     if(dt.second<10)
       second = "0${dt.second}";
     else
-      second = "${dt.second}";      
-    return dt.year.toString()+"-"+month+"-"+day+" "+hour+":"+minute+":"+second;
+      second = "${dt.second}";
+    if( format == "Y-m-d h:m:s" ){
+      return dt.year.toString()+"-"+month+"-"+day+" "+hour+":"+minute+":"+second;
+    }
+    else if( format == "Y-m-d" ){
+      return dt.year.toString()+"-"+month+"-"+day;
+    }
+    else if( format == "d-m-Y h:m:s" ){
+      return day+"-"+month+"-"+dt.year.toString()+" "+hour+":"+minute+":"+second;
+    }
+    else if( format == "d-m-Y" ){
+      return day+"-"+month+"-"+dt.year.toString();
+    }
+    else
+      return dt.year.toString()+"-"+month+"-"+day+" "+hour+":"+minute+":"+second;
   }
   else
     return "";

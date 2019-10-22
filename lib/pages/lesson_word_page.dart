@@ -46,26 +46,12 @@ class _LessonWordPageState extends State<LessonWordPage> {
             centerTitle: true,
             title: Text("មេរៀនទី ${widget.lesson}"),
             backgroundColor: Colors.pinkAccent[100],
-            bottom: TabBar(
-              indicatorColor: Colors.pinkAccent,
-              tabs: [
-                Tab(text: "ពាក្យ"),
-                Tab(text: "វេយ្យាករណ៍"),
-              ],
-            ),
           ),
           backgroundColor: Colors.pink[100],
-          body: TabBarView(
-            children: [
-              ListView(
-                children: widgetRowResult
-              ),
-              Center(
-                child: Text("Not available!"),
-              )
-            ],
-          
-          ),
+          body: ListView(
+              padding: EdgeInsets.symmetric(vertical: 5),
+              children: widgetRowResult
+            ),
         ),
       ),
     );
