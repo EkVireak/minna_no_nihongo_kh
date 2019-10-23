@@ -13,3 +13,6 @@
 
 ### Sound of Text
 Generate Sound **[Sound of Text](https://soundoftext.com)**
+
+### Download
+**[APK Beta1](https://github.com/EkVireak/minna_no_nihongo_kh/raw/master/apk/mnn-kh-beta1.apk)**
